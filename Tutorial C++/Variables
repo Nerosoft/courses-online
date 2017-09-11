@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Variables" << endl;
+	
+	char    ch     =  'a'; //1 byte             Character
+	short   sh     =  20;  //2 byte             Integer
+	int     in     =  20;  //4 byte             Integer
+	long    lo    =  20;   //4 byte             Integer
+	float   fl    = 10.5;  //4 byte  Decimal Or Integer
+	double  du    = 10.5;  //8 byte  Decimal Or Integer
+
+	cout << "char is : "   << ch << endl;
+	cout << "short is : "  << sh << endl;
+	cout << "int is : "    << in << endl;
+	cout << "long is : "   << lo << endl;
+	cout << "float is : "  << fl << endl;
+	cout << "double is : " << du << endl;
+
+	system("pause");	
+}
+

@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Operator" << endl;  // + , - , * , / , += , -= , *= , /= 
+	
+	short a = 10;
+	cout << "the value of variable a is : " << a << endl;                 // 10
+	a = a + 1;                                                           // value + 1 ---> 10 + 1 
+	cout << "the value of variable a is : " << a << endl;               // 11
+	a = a - 1;										                   // value - 1 ---> 10 - 1 					
+	cout << "the value of variable a is : " << a << endl;             //10
+	a = a * 2;                                                       // value * 1 ---> 10 * 1 	
+	cout << "the value of variable a is : " << a << endl;           // 20
+	a = a / 2;                                                     // value / 1 ---> 10 / 1 	
+	cout << "the value of variable a is : " << a << endl;         // 10
+	a += 1;                                                      // ضيف علي قيمه المتغير 1 وخزن القيمه الجديده 
+	cout << "the value of variable a is : " << a << endl;       // 11
+	a -= 1;                                                    // انقص من قيمه المتغير 1 وخزن القيمه الجديده 
+	cout << "the value of variable a is : " << a << endl;     // 10
+	a *= 2;                                                  // اضرب قيمه المتغير في 2 وخزن القيمه الجديده 
+	cout << "the value of variable a is : " << a << endl;   // 20
+	a /= 2;                                                // اقسم قيمه المتغير علي 2 وخزن القيمه الجديده 
+	cout << "the value of variable a is : " << a << endl; // 10
+
+	system("pause");	
+}
+

@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Operator" << endl;  // Increment ++ , Decrement --
+	
+	short a = 10;
+	a++;													     //ضاعف قيمة المتغير بمقدار 1												
+	cout << "the value of variable a is : " <<  a   << endl;    // 11
+	a--;													   //انقص قيمة المتغير بمقدار 1
+	cout << "the value of variable a is : " << a << endl;	  //10
+	++a;													 //ضاعف قيمة المتغير بمقدار 1	
+	cout << "the value of variable a is : " << a << endl;	//11
+	--a;												   //انقص قيمة المتغير بمقدار 1
+	cout << "the value of variable a is : " << a << endl; //10
+	//------------------------------------------------------
+	cout << "the value of variable a is : " << ++a << endl;  //11  // ضاعف قيمه المتغير بمقدار 1 في الميموري اولا ثم ينادي قيمه المتغير 
+	cout << "the value of variable a is : " << --a << endl; // 10 // انقص قيمه المتغير بمقدار 1 في الميموري اولا ثم ينادي قيمه المتغير 
+	//------------------------------------------------------
+	cout << "the value of variable a is : " << a++ << endl;//10 // نادي قيمة المتغير اولا ثم ضاعف القيمه في الميموري
+	cout << "the value of variable a is : " << a << endl;  // 11
+	
+	cout << "the value of variable a is : " << a-- << endl; //11 // نادي قيمة المتغير اولا ثم انقص القيمه في الميموري
+	cout << "the value of variable a is : " << a << endl;  // 10
+
+	system("pause");	
+}
+

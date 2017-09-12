@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Receive Value From User" << endl;
+	
+	cout << "please input a number" << endl;
+	short a;
+
+	cin >> a; // يتم استقبال قيمه من المستخدم وتخزنها داخل المتغير بواسطه الاوبجيكت
+
+	cout<< "your number is " << a << endl;
+	
+	system("pause");	
+}
+

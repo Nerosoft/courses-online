@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Control Statement" << endl; // if , else 
+	
+	cout << "please input a number" << endl;
+	int a ;
+	cin >> a; // استقبال قيمه من المستخدم وتخزنها داخل المتغير 
+
+	if (  a    ==   50   ){  // هل قيمه المتغير تساوي رقم 50 يتم تنفيذ ماداخل الاقواس اذا تحقق الشرط
+
+		cout << "your number is " << a << endl;
+	}
+	
+
+	system("pause");	
+}
+

@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Control Statement" << endl; // if , else ,else if
+	
+	cout << "please input one of these char ( + , - , * )" << endl;
+	char a ; 
+
+	cin >> a; 
+
+	 if (  a    ==   '+'   ) 
+		cout << "your number is  " << 2 + 2 << endl;
+	else if (a == '-')
+		cout << "your number is  " << 2 - 2 << endl;
+	else if (a == '*')
+		cout << "your number is  " << 2 * 2 << endl;
+
+	else 
+		cout << "bad input" << endl;
+	
+	system("pause");	
+}
+

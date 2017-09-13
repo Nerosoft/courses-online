@@ -7,7 +7,7 @@ void main(){
 	char a ; 
 
 	cin >> a; 
-
+// يتم اهمال باقي حالات الشروط اذا تحقق شرط واحده 
 	 if (  a    ==   '+'   ) 
 		cout << "your number is  " << 2 + 2 << endl;
 	else if (a == '-')

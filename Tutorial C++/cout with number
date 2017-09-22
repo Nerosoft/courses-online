@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std; 
+
+void main(){
+	cout << "cout with number" << endl;
+
+	cout << 123 << endl; //يميز الكومبيلير الارقام لانه لا يوجد عنده جمله تبدأ برقم ابدا
+
+	system("pause");
+}
+
+

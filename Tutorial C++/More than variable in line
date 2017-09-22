@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std; 
+
+void main(){
+	cout << "Variable" << endl;
+
+	char ch = 'a', ch2 = 'b', ch3 = 'c'; //تعريف اكثر من متغير وتخزين القيمة بداخله في سطر واحد
+
+	cout << ch <<" "<< ch2 <<" "<< ch3 << endl; // يتم جلب قيمه كل متغير  للطباعه و عمل سطر جديد
+
+	system("pause");
+}
+
+

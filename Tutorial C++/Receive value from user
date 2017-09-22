@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std; 
+
+void main(){
+	cout << "Receive value from user" << endl;
+
+	cout << "Please enter a number" << endl;
+
+	short a;
+
+	cin >> a; // يتم استقبال قيمه من المستخدم وتخزنها في المتغير 
+
+	cout << "Your number is " << a << endl;
+
+	system("pause");
+}
+
+

@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std; 
+
+void main(){
+	cout << "Control statement if" << endl;
+
+	cout << "Please enter a number" << endl;
+
+	int a=20;
+
+	cin >> a; 
+
+	if (a == 50){ //اذ كانت قيمه المتغير تساوي 50 يتحقق الشرط وينفذ ما بداخل الاقواس
+
+		cout << "Your number is " << a << endl;
+	}
+	system("pause");
+}
+
+

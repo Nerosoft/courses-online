@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std; 
+
+void main(){
+	cout << "Variable" << endl;
+
+	char ch; // تم حجز مساحه في الذاكره قيمتها 1 بايت وتمثلها بمتغير 
+
+	ch = 'a'; // يتم ادخال قيمه في الذاكره تتناسب مع نوع المتغير 
+
+	cout << ch << endl; // يتم جلب قيمه المتغير للطباعه و عمل سطر جديد
+
+	system("pause");
+}
+
+

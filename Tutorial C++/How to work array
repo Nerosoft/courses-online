@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Array" << endl;
+
+	int a[3] = {10,20,30}; // تم حجز 3 مواقع في الذاكر بطرقية متسلسلة 
+
+	cout << "index 0 = " << a[0]  << endl; // الموقع الاول
+	cout << "index 1 = " << a[1] << endl;  // الموقع الثاني
+	cout << "index 2 = " << a[2] << endl; // الموقع الثالث
+
+	system("pause");
+}

@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+void rec(int a);
+void main(){
+	cout << "Pointer" << endl;
+
+	int a[3] = { 10, 20, 30 };
+
+	int *ptr = &a[0];
+
+	cout << "index 0 =  " << ptr + 0 << "  And value = " << *(ptr + 0) << endl;
+	cout << "index 1 =  " << ptr + 1 << "  And value = " << *(ptr + 1) << endl;
+	cout << "index 2 =  " << ptr + 2 << "  And value = " << *(ptr + 2) << endl;
+
+	system("pause");
+}
+
+
+
+

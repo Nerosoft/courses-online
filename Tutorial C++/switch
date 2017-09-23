@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Control Statement switch" << endl;
+	cout << "Please choseing one of these option" << endl;
+	cout << "1-For Shutdown Pc" << endl;
+	cout << "2-For Restart  Pc" << endl;
+	cout << "3-For Log Off pc" << endl;
+	int a;
+	cin >> a;
+
+	switch (a){ //يتم التعويض بقيمه المتغير بين الاقواس
+
+	case 1: cout << "Shutdown computer" << endl; //اذا كانت قيمه المتغير تساوي 1
+		break; // يتم كسر السوتش والخروج منها
+
+
+	case 2: cout << "Restart computer" << endl; //اذا كانت قيمه المتغير تساوي 2
+		break; // يتم كسر السوتش والخروج منها
+
+
+	case 3: cout << "Log Off computer" << endl; //اذا كانت قيمه المتغير تساوي 3
+		break; // يتم كسر السوتش والخروج منها
+
+	}
+
+	system("pause");
+}

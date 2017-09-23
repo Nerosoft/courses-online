@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Control Statement while loop" << endl;
+
+	int i = 0;
+	while (i < 5){ // منطقه الشرط اي اذا تحقق الشرط يتم دخول الدالة وتنفيذ ما تحتوي الاقواس 
+
+		i++; // عداد حتي يتم تحديث الشرط
+
+		cout << "i = " << i << endl;
+	}
+
+
+
+	system("pause");
+}

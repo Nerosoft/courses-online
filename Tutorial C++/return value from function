@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int f1(); 
+char f2();
+void f3();
+
+void main(){
+	cout << "Function" << endl;
+
+	int a = f1(); 
+	char b = f2();
+	f3();
+	cout << "value of a = " << a << endl << "value of b = " << b << endl;
+
+	system("pause");
+}
+
+int f1(){ 
+	cout << "Hello function" << endl;
+	return 50; 
+}
+char f2(){
+	cout << "Hello function" << endl;
+	return 'x';
+}
+void f3(){
+	cout << "Hello function Void" << endl;
+	
+}
+//تكوين الداله 
+
+//Data-type function-name ( parameter )return value from function

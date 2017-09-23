@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Control Statement for loop" << endl;
+
+	for ( int a = 1; a < 5 ; a++ )
+	cout << a << " * 2 = " << a * 2 << endl;
+
+
+
+	system("pause");
+}

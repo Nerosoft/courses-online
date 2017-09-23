@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Control Statement Logical Operator" << endl; // ( && And ) ( || Or ) ( ! Not )
+
+	bool test_connection = false; // يعني سلك النت فاصل او الويرليس فاصل 
+
+	if (!test_connection)
+
+		cout << "error coonection" << endl;
+
+	system("pause");
+}
+//&&  --> (true && true && true) = true  (false && true) = false (true && false) = false (false && false && false) = false
+
+// || --> (false || true) = true (true || false) = true (false || true || false) = true  (false || false || false) = false
+
+// ! -->  (! true ) = false  (! false ) = true

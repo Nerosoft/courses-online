@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int f1(); 
+
+
+void main(){
+	cout << "Function" << endl;
+
+	cout <<"retuen of function is "<<f1()<<endl; 
+	
+
+	system("pause");
+}
+
+
+int f1(){
+	cout << "Hello function" << endl;
+	return 100;
+	
+}
+//تكوين الداله 
+
+//Data-type function-name ( parameter )

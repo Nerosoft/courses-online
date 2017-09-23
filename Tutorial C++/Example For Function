@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+void print_name(char a[50]);
+
+void main(){
+	cout << "Example For Function" << endl;
+
+	print_name("abdo el gamal");
+	print_name("osama el wakel");
+	print_name("abdo el gamal");
+
+
+
+
+	system("pause");
+}
+
+void print_name(char a[50]){
+
+	int index = 0;
+	while (a[index] != '\0')
+		cout << a[index++];
+	cout << endl;
+}

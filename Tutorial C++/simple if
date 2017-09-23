@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+void main(){
+	cout << "Control Statement simple if " << endl; 
+	
+	int a;
+
+	a = (2 < 3) ? 100 : 200; //اذا تحقق الشرط يتم تخزين القيمه 100 داخل المتغير واذا لم يتحقق الشرط يتم تخذين القيمه 200
+
+	cout << "a is = " << a << endl;
+
+	system("pause");
+}

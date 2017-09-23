@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std; 
+void *print_name(char a[50]);
+
+void main(){
+	cout << "two diemsion array " << endl;
+
+	int a[3][3] = { { 10, 20, 30 }, { 100, 200, 300 }, { 1000, 2000, 30000 } };
+
+	cout << a[0][1] << endl;
+	cout << a[1][1] << endl;
+	cout << a[2][1] << endl;
+	a[0][2] = 31;
+	a[1][2] = 301;
+	a[2][2] = 3001;
+	cout << a[0][2] << endl;
+	cout << a[1][2] << endl;
+	cout << a[2][2] << endl;
+
+
+	system("pause");
+}

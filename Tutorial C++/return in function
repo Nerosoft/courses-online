@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+void f1(); 
+
+
+void main(){
+	cout << "Function" << endl;
+
+	f1(); 
+	
+
+	system("pause");
+}
+
+
+void f1(){
+	cout << "Hello function Void 1" << endl;
+	return;
+	cout << "Hello function Void 2" << endl;
+}
+//تكوين الداله 
+
+//Data-type function-name ( parameter )

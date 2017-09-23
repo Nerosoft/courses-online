@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+
+void f1(int a, char b, bool c, double d, int e[5], char str[30]);
+
+void main(){
+	cout << "Function" << endl;
+
+	int ww[5] = { 100, 200, 300, 400, 500 };
+
+	f1(10, 'R', true, 20.3, ww, "abdo el gamal");
+
+	system("pause");
+}
+
+void f1(int a, char b, bool c, double d, int e[5], char str[30]){
+
+	cout << "variable int    a is " << a << endl;
+	cout << "variable char   b is " << b << endl;
+	cout << "variable bool   c is " << c << endl;
+	cout << "variable double d is " << d << endl;
+
+	cout << "variable int array  e is ";
+	for (int index = 0; index < 5; index++)
+		cout << e[index] << "  ";
+	cout << endl;
+
+	int i = 0;
+	cout << "variable char array str is ";
+	while (true){
+		if (str[i] == '\0')
+			break;
+		else
+			cout << str[i];
+		i++;
+	}
+	cout << endl << endl << endl;;
+}
+
+//تكوين الداله 
+
+//Data-type function-name ( parameter )

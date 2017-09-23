@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+void login(int &aa);
+
+
+
+void main(){
+	cout << "Function Send by ref" << endl;
+	int a = 100;
+	cout << "variable of (a) in main before call function " << a << endl;
+	login(a);
+	cout << "variable of (a) in main function " << a << endl;
+	system("pause");
+}
+
+
+void login(int &aa){ //يتم استقبال مرجع المتغير وليس القيمة
+	 aa += 100;
+	cout << "variable of (a) in login function " <<aa<< endl;
+}
+
+
+//تكوين الداله 
+
+//Data-type function-name ( parameter )

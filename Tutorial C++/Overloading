@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+void login(char username[20]);
+void login(char username[20], char password[20]);
+
+
+void main(){
+	cout << "Function polymorphism" << endl;
+	login("ahmed");
+	login("ahmed", "123");
+	/*
+	الزتونه انك احتفظط بأسم الداله المخصصه اتسجيل الدخول
+	بحيث انك تنادي علي الداله وتمرر عدد البراميتر 
+	بحيث لو عملية تسجيل الدخول معقده تمرر للداله اسم المستخدم وكلمة السر
+	اما اذا كنت عملية تسجيل الدخول ميسره تمرر اسم المستخدم
+	*/
+	// بس متنساش انك بتستدعي نفس اسم الداله
+
+
+	system("pause");
+}
+
+
+void login(char username[20]){
+	cout << "is correct " << endl;
+}
+
+void login(char username[20], char password[20]){
+	cout << "is correct " << endl;
+}
+
+//تكوين الداله 
+
+//Data-type function-name ( parameter )

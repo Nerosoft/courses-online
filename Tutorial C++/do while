@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 void main(){
-	cout << "Control Statement while loop" << endl;
+	cout << "Control Statement do while loop" << endl;
 	 char i;
 	do{
 	

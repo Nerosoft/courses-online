@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+
+void main(){
+	cout << "Array" << endl;
+	cout << "Please enter your name" << endl;
+	char a[50];
+
+	cin.get(a, 50); //يتم استقبال قيمة من المستخدم وتخزنها داخل المتغير 
+
+	for (int index = 0; index < 50; index++)
+
+		if (a[index] == '\0')
+			break;
+		else
+			cout  << a[index];
+
+	cout << endl;
+
+	system("pause");
+}

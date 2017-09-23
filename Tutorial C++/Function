@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int f1(); //لكي يفهم الكومبيلير انه يوجد داله بنفس هذه المواصفات
+
+void main(){
+	cout << "Function" << endl;
+
+	
+	int a = f1(); //استدعاء الداله واستقبال القيمه التي ترجع بها و تخزنها في المتغير
+
+	cout << "value is " << a << endl;
+
+
+
+	system("pause");
+}
+
+int f1(){ // جسم الداله 
+
+	cout << "Hello function" << endl;
+
+	return 50; // يتم الرجوع بقيمه تساوي 50 توافق نوع الا نتيجير
+}
+
+//تكوين الداله 
+
+//Data-type function-name ( parameter )

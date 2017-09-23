@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std; 
+
+void main(){
+	cout << "Control statement if " << endl; // bool ---> true and false
+
+	// true   or 1 --> يمثل صحيح 
+	// false  or 1 --> يمثل غير صحيح 
+
+	bool a = true; // تعريف متغير منطقي 
+	
+	if ( a ){ 
+		cout << "is correct" << endl;
+	}
+
+	// true --> صحيح نفذ الشرط
+	// false --> غير صحيح لا تنفذ الشرط
+
+	system("pause");
+}
+
+

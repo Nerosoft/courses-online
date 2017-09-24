@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+char *func(char aa[10] );
+struct car{
+	int a = 10;
+	char p = 'c';
+
+};
+
+int main(){
+	cout << "Pointer" << endl;
+
+	 
+
+	cout << *(func("hello")+1) << endl;
+	
+	system("pause");
+}
+
+
+char *func(char aa[10]){
+
+
+
+	return aa;
+}
+

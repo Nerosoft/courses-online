@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void print_name(char a[50]);
+void print_name(char a[]);
 
 void main(){
 	cout << "Example For Function" << endl;
@@ -15,7 +15,7 @@ void main(){
 	system("pause");
 }
 
-void print_name(char a[50]){
+void print_name(char a[]){
 
 	int index = 0;
 	while (a[index] != '\0')

@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int *f1(int a[]);
+
+
+void main(){
+	cout << "Function return array part 2" << endl;
+
+	int a[3] = { 1, 2, 3 };
+	
+	int *ptr   =  f1(a);
+
+	int arr[3] = { *ptr, *(ptr +1), *(ptr+2) };
+
+	cout << "index 0 is = " << arr[0] << endl;
+	cout << "index 1 is = " << arr[1] << endl;
+	cout << "index 2 is = " << arr[2] << endl;
+
+
+	
+	system("pause");
+}
+
+int *f1(int a[]){
+
+	int temp[3];
+
+	for (int i = 0, ii = 2; ii >= 0; i++, ii--)
+
+		 temp[i] = a[ii];
+
+	//cout << temp[0] << endl << temp[1] << endl << temp[2] << endl << endl;
+	return temp;
+}
+
+//تكوين الداله 
+
+//Data-type function-name ( parameter )

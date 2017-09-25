@@ -25,7 +25,7 @@ void login(char username[]){
 	cout << "is correct " << endl;
 }
 
-void login(char username[20], char password[20]){
+void login(char username[], char password[]){
 	cout << "is correct " << endl;
 }
 

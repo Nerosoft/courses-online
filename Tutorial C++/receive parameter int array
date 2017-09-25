@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+void print(int a[]);
+
+void main(){
+	cout << "Function array" << endl;
+
+	int a[5] = { 100, 200, 300, 400, 500 };
+	
+	print(a);
+
+	system("pause");
+}
+
+
+void print(int a[]){
+
+	for (int index = 0; index < 5; index++)
+		cout << "index  " << index <<"   "<< a[index] << endl;
+
+}
+
+
+//تكوين الداله 
+
+//Data-type function-name ( parameter )

@@ -1,0 +1,29 @@
+cv.js
+
+function getname(){
+
+    return "abduulah";
+}
+
+function getage(){
+
+    return 24;
+}
+
+
+module.exports.name=getname();
+
+module.exports.age=getage();
+
+
+app.js
+
+var cv=require("./cv");
+
+var cv2 =  cv;
+
+console.log(cv.name);
+
+cv2.age+=5;
+
+console.log(cv.age);

@@ -1,0 +1,16 @@
+getSite("abdo",9000,(name,site)=>{
+  console.log("name is "+name+" site is "+site);
+});
+
+
+getSite("ahmed",5000,(name,site)=>{
+  console.log("name is "+name+" site is "+site);
+});
+
+getSite("osama",4000,(name,site)=>{
+  console.log("name is "+name+" site is "+site);
+});
+
+function getSite(name,time,callback){
+  setTimeout(()=>callback(name,"google"),time);
+}

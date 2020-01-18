@@ -1,0 +1,21 @@
+
+var arg={ hello:"world" };
+
+
+function myfun(args) {
+    args.hello="hello";
+}
+
+myfun(arg);
+
+console.log(arg);
+
+var a ={
+    age:5
+};
+
+var b=a;
+b.age+=1;
+
+console.log(b.age);
+console.log(a.age);

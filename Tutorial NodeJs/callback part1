@@ -1,0 +1,16 @@
+
+        getname(   "abdullah"  ,  function (aaa){
+
+                console.log("hiiiiiiiiiiiiii    "   +  aaa );
+
+        } );
+
+
+
+
+        function getname(  name   ,   callback ){
+
+
+                callback(name);
+
+        }

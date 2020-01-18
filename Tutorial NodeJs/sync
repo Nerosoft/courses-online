@@ -1,0 +1,10 @@
+
+setTimeout(function(){getPage("abdullah","page1")},4000);
+setTimeout(function(){getPage("ahmed","page2")},4000);
+setTimeout(function(){getPage("osama","page3")},4000);
+setTimeout(function(){getPage("mohamed","page4")},4000);
+
+function getPage(name ,page) {
+    var d = new Date();
+    console.log(name + " "+page+"  M="+ d.getMinutes() + " S=" +d.getSeconds());
+}

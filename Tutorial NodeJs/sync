@@ -1,8 +1,14 @@
 
-setTimeout(function(){getPage("abdullah","page1")},4000);
-setTimeout(function(){getPage("ahmed","page2")},4000);
-setTimeout(function(){getPage("osama","page3")},4000);
-setTimeout(function(){getPage("mohamed","page4")},4000);
+setTimeout(function(){getPage("abdullah","page1")},60000);
+setTimeout(function(){getPage("ahmed","   page2")},60000);
+setTimeout(function(){getPage("osama","   page3")},60000);
+setTimeout(function(){getPage("mohamed"," page4")},60000);
+
+
+
+console.log("i am here");
+
+
 
 function getPage(name ,page) {
     var d = new Date();

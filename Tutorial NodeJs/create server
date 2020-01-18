@@ -1,0 +1,13 @@
+var http = require('http');
+
+var site =http.createServer(  function (req, res)  {
+
+    res.writeHead(200, {'Content-Type': 'text/html'});
+
+    res.end('Hello node js');
+
+  }
+  
+  );
+  
+  site.listen(8080);

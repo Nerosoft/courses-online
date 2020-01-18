@@ -1,0 +1,26 @@
+cv.js
+
+module.exports={
+    
+   name: ()=>{
+
+    console.log("abduulah");
+},
+
+  age :24
+
+};
+
+
+app.js
+
+
+var cv=require("./cv");
+
+
+cv.name();
+
+
+console.log(cv.age);
+
+

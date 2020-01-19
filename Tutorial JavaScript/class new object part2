@@ -1,0 +1,35 @@
+class car{
+
+    name     =    "bmw"
+    model    = 2020
+
+    getName  (        )    {
+
+    }
+
+
+    displayModel   (      )    {
+
+
+    }
+
+}
+
+  var   car1  =  new car  () ;
+  var   car2  =  new car  () ;
+  var   car3  =  new car  () ;
+
+  car1.name = "BMW";
+  
+  car3.name = "yyy";
+
+
+
+  console.log( car1.name );
+  console.log( car2.name );
+  console.log( car3.name );
+
+
+
+
+

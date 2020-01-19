@@ -1,0 +1,29 @@
+
+class car{
+
+    constructor(  name   ){
+
+      this.name=name;
+    }
+     
+
+}
+
+
+class model extends car{
+
+    constructor(m){
+
+      super("BMW "   + m);
+
+      this.model=m;
+
+    }
+
+
+}
+
+
+var car2020=  new model(2020);
+
+console.log(car2020.name);

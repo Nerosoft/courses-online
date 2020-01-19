@@ -1,0 +1,27 @@
+class car{
+
+  
+
+      constructor(  abc    ){
+
+        console.log("hi iam constructor");
+        this.name=abc;
+      }
+
+
+
+  displayName  () {
+
+      console.log(  "the name is  "   +  this.name  );
+  }
+
+
+
+
+}
+
+  var   car1  =  new car  (    "BMW"   )    ;
+
+
+
+car1.displayName();

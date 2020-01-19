@@ -1,0 +1,16 @@
+class car{
+
+    name     =    "bmw"
+    model    = 2020
+
+    getName  (        )    {
+
+    }
+
+
+    displayModel   (   )    {
+
+
+    }
+
+}

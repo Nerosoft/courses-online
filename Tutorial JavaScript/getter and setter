@@ -1,0 +1,26 @@
+
+
+
+class car {
+
+    constructor(){
+      this.name="BMW";
+    }
+
+    
+     set setName(x){
+          this.name=x;
+      }
+    get  getName(){
+
+        return this.name;
+      }
+
+}
+
+
+var car1=  new car();
+
+car1.setName ="yyy";
+
+console.log(   car1.getName  );

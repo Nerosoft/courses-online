@@ -1,0 +1,29 @@
+// Operator	Description
+// +	Addition
+// -	Subtraction
+// *	Multiplication
+// /	Division
+
+
+
+// ++	Increment
+// -- Decrement
+
+
+var a=10 , b=5;
+
+var sum ;
+
+
+sum =   a   +     b;
+console.log(sum);
+
+sum =   a   -     b;
+console.log(sum);
+
+sum =   a   *     b;
+console.log(sum);
+
+sum =   a   /     b;
+console.log(sum);
+

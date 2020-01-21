@@ -1,0 +1,14 @@
+// ++	Increment
+// --	Decrement
+
+
+
+var   x    =     2      , y=0    ;
+
+    y   =   ++x       ;
+
+
+//console.log(        x  ++   );
+
+
+console.log(       y     );

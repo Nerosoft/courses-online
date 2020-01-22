@@ -1,0 +1,27 @@
+// if (condition) {
+//     //  block of code to be executed if the condition is true
+//   }
+
+
+
+var x  =3;
+
+
+
+if (   x  ==   1     ){
+
+        console.log(  " x   is  1 "   );
+
+}
+    else if(     x  ==   2    ){
+
+        console.log(" x is 2");
+    }
+
+else{
+
+        console.log(" asdsafsdzfd");
+
+
+
+}

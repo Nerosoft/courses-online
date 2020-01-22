@@ -1,0 +1,21 @@
+//Comparison Operators 
+
+// ==	equal to
+// !=	not equal
+// >	greater than
+// <	less than
+// >=	greater than or equal to
+// <=	less than or equal to
+
+var x = 1;
+
+
+//console.log( x     ==       1  );
+
+if(    x     ==       1    ){
+
+
+    console.log("true");
+
+
+}

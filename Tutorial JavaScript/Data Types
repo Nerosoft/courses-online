@@ -1,0 +1,19 @@
+var age = 16;                                    // Number
+var lastName = "abduulah";                      // String
+
+
+var x = {
+    firstName:"John",
+
+     lastName:"Doe",
+
+     age: 24,
+
+     age2:25
+    
+    
+    };    // Object
+
+
+
+console.log(  x.firstName  +  "   and age is "  +    x.age);

@@ -1,0 +1,19 @@
+var 
+    firstName="abduulah",
+    lastName="elGamal",
+    age=24;
+
+
+    var x =  [  "abdullah"  , "elgamal"  ,    24     ]  ;
+
+
+
+
+
+
+
+
+
+
+
+    console.log(     x [  2  ]   );

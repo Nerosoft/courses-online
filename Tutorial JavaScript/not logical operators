@@ -1,0 +1,13 @@
+//JavaScript Logical Operators
+// &&	logical and
+// ||	logical or
+// !	logical not
+
+
+var  x   =    5;
+
+if(     !     (  x  ==  4 )     ){
+
+    console.log("is true");
+
+}

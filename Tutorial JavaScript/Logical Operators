@@ -1,0 +1,13 @@
+//JavaScript Logical Operators
+// &&	logical and
+// ||	logical or
+// !	logical not
+
+
+var  x   =    3;
+
+if(     x   >  1       &&     x   <=  3      ){
+
+    console.log("is true");
+
+}

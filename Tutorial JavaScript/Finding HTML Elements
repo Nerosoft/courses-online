@@ -1,0 +1,21 @@
+//Finding HTML Elements
+//          Method	                        Description
+// document.getElementById(id)	Find an element by element id
+// document.getElementsByTagName(name)	Find elements by tag name
+// document.getElementsByClassName(name)	Find elements by class name
+
+
+
+//document.getElementById("h1ID").innerText="hello";
+
+// var x  =   document.getElementsByTagName("h1");
+
+
+// x[1].innerText="hello world";
+
+
+
+var x2  =   document.getElementsByClassName("ppp");
+
+
+x2[1].innerText="hello world  by class";

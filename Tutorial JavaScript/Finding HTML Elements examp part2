@@ -1,0 +1,21 @@
+//Finding HTML Elements
+//          Method	                        Description
+// document.getElementById(id)	Find an element by element id
+// document.getElementsByTagName(name)	Find elements by tag name
+// document.getElementsByClassName(name)	Find elements by class name
+
+
+
+var div = document.getElementById("divID");
+
+
+
+var element  =  div.getElementsByClassName("ppp");
+
+
+element[  0 ] .innerText="hello1";
+element[  1 ] .innerText="hello2";
+
+element[  2 ] .innerText="hello3";
+
+element[  3 ] .innerText="hello4";

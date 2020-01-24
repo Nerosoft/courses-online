@@ -1,0 +1,43 @@
+//classList
+
+
+// document.getElementById("ID").classList.toggle("b");
+
+
+if(document.getElementById("ID").classList.contains("c")){
+
+            console.log("YES");
+
+}else{
+
+
+    console.log("NO");
+}
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+
+<h1 id="ID" class="a b ">hello world</h1>
+
+
+
+
+<script src="app.js"></script>
+
+
+
+</body>
+</html>

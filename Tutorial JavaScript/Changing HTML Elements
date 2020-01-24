@@ -1,0 +1,55 @@
+// The innerHTML    Property
+// The outerHTML    Property
+// The innerText    Property
+// The textContent  Property
+
+
+// document.getElementById("h1ID").innerHTML='<p> ppp </P>';
+// console.log(   document.getElementById("h1ID").innerHTML  );
+
+
+// document.getElementById("h1ID").outerHTML='<div id="h1ID">ppp</div>';
+// console.log(   document.getElementById("h1ID").outerHTML  );
+
+
+
+
+
+//document.getElementById("h1ID").innerText='<p> ppp </P>';
+
+ //console.log(   document.getElementById("h1ID").innerText  );
+
+
+
+console.log(   document.getElementById("h1ID").textContent  );
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+
+<div id="h1ID">
+    
+    This is a Heading1.
+    <h1>This is a span.</h1>
+    <h1>This is a span2.</h1>
+</div>
+
+
+
+
+<script src="app.js"></script>
+
+
+
+</body>
+</html>

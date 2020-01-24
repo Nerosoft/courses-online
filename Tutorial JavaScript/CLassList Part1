@@ -1,0 +1,39 @@
+//element.removeAttribute(attribute name)
+//classList
+
+
+
+//document.getElementById("ID").removeAttribute("class");
+
+
+
+//console.log(document.getElementById("ID").classList[1]);
+
+// document.getElementById("ID").classList.remove("b","c");
+
+console.log (document.getElementById("ID").classList.value);
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+
+<h1 id="ID" class="a b c">hello world</h1>
+
+
+
+
+<script src="app.js"></script>
+
+
+
+</body>
+</html>

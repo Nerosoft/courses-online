@@ -1,0 +1,30 @@
+//element.setAttribute(attribute, value)
+//element.getAttribute(attribute name)
+
+//https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png
+//console.log(document.getElementById("imgID").getAttribute("src"));
+
+document.getElementById("imgID").setAttribute( "src" ,"https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"  );
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+
+<img id="imgID"  />
+
+
+
+
+<script src="app.js"></script>
+
+
+
+</body>
+</html>

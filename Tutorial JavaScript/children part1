@@ -1,0 +1,45 @@
+//children
+//firstElementChild
+//lastElementChild
+//children.length
+//childNodes
+//firstChild
+//lastChild
+//childNodes.length
+
+
+// console.log( document.getElementById("ID").children[0]  );
+// console.log( document.getElementById("ID").children[1]  );
+// console.log( document.getElementById("ID").children[2]  );
+
+// console.log( document.getElementById("ID").firstElementChild.textContent);
+// console.log( document.getElementById("ID").lastElementChild);
+console.log( document.getElementById("ID").children.length);
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+
+<div id="ID">
+    <h1>hello1</h1>
+    <h1>hello2</h1>
+    <h1>hello3</h1>
+</div>
+
+
+
+
+<script src="app.js"></script>
+
+
+
+</body>
+</html>

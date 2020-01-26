@@ -1,0 +1,24 @@
+//document.createElement("element")
+//document.createTextNode("text")
+//document.appendChild(node)
+//document.insertBefore("child","position")
+
+
+
+
+
+
+// var x = document.createTextNode("abdullah");
+// document.getElementById("ID").appendChild(x);
+
+
+var x = document.createElement("h1");
+
+var text = document.createTextNode("abdullah");
+
+
+x.appendChild(text);
+
+// document.getElementById("ID").appendChild(x);
+
+document.getElementById("ID").insertBefore( x    ,   document.getElementsByTagName("p")[1] );

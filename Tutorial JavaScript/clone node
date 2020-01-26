@@ -1,0 +1,40 @@
+//document.getElementById("ID").cloneNode(deep)
+//document.removeChild("element")
+
+
+
+
+var x   =   document.getElementById("ID").cloneNode(true);
+
+document.getElementById("ID2").appendChild(x);
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+
+<div id="ID">
+
+    <p>hello world 1</p>
+    <p>hello world 2</p>
+    <p>hello world 3</p>
+
+</div>
+
+
+<div id="ID2">
+
+</div>
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

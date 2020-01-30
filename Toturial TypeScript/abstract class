@@ -1,0 +1,73 @@
+ class cars{
+    public  name:string ;
+    public model:number;
+    constructor(name:string ,model:number){
+        console.log("IAM HERRRRRRRRRRRRRR");
+        this.name=name;
+        this.model=model;
+    }
+
+    
+}
+
+
+abstract class creadit{
+    private creaditID:number;
+    private pass:number;
+    constructor(creaditID:number, pass:number){
+        this.creaditID=creaditID;
+        this.pass=pass;
+    }
+        
+    public showCreaditID(){
+        console.log("the creadit id is "+this.creaditID);
+    }
+
+    public getPassOfCreadit() : number  {
+         return this.pass;
+    }
+
+}
+
+export  class employ extends creadit{
+
+    public fullName:string;
+    public age:number;
+
+    constructor(fullName:string, age:number){
+        super(123456789,123321);
+        this.fullName=fullName;
+        this.age=age;
+        
+    }
+}
+
+
+
+
+
+
+import { Component } from '@angular/core';
+import { from } from 'rxjs';
+import { employ } from './car';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  title = 'TypeScript Type';
+  abdullah:employ;
+    constructor(){
+
+      this.abdullah=new employ("abdullah",24);
+      
+      console.log( this.abdullah.fullName);
+        console.log( this.abdullah.age);
+         this.abdullah.showCreaditID();
+         console.log(this.abdullah.getPassOfCreadit());
+    }
+
+}

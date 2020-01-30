@@ -1,0 +1,51 @@
+class cars{
+    name:string ;
+    model:number;
+    constructor(name:string ,model:number){
+        console.log("IAM HERRRRRRRRRRRRRR");
+        this.name=name;
+        this.model=model;
+        
+    }
+}
+
+export class employ extends cars{
+
+    fullName:string;
+    age:number;
+
+    constructor(fullName:string, age:number){
+        super("bmw",2020);
+        this.fullName=fullName;
+        this.age=age;
+    }
+
+
+}
+
+
+
+import { Component } from '@angular/core';
+import { from } from 'rxjs';
+import { employ } from './car';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  title = 'TypeScript Type';
+  abdullah:employ;
+    constructor(){
+
+      this.abdullah=new employ("abdullah",24);
+      
+      console.log( this.abdullah.fullName);
+        console.log( this.abdullah.age);
+          console.log( this.abdullah.name);
+            console.log( this.abdullah.model);
+    }
+
+}

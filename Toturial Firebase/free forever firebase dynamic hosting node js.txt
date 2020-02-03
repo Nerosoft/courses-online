@@ -1,0 +1,42 @@
+const functions = require('firebase-functions');
+const espress= require("express");
+//npm i handlebars consolidate --save
+ const engines=require('consolidate');
+
+
+var app=espress();
+
+ app.set('views','./views');
+ app.engine('hbs',engines.handlebars);
+ app.set('view engine', 'hbs');
+
+
+app.get('/time',(request, response) => {
+   // response.render(`${Date.now()}`);
+   response.render("time",{
+       time:Date.now()
+   });
+   });
+
+
+   app.get('/info',(request, response) => {
+    // response.render(`${Date.now()}`);
+    response.render("info",{
+        name:'abdullah',
+        age:24
+    });
+    });
+
+    app.get('/',(request, response) => {
+        // response.render(`${Date.now()}`);
+        response.render("info",{
+            name:'abdullah',
+            age:24
+        });
+        });
+ 
+
+// // Create and Deploy Your First Cloud Functions
+// // https://firebase.google.com/docs/functions/write-firebase-functions
+//
+exports.abdo = functions.https.onRequest(app);

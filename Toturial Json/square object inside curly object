@@ -1,0 +1,38 @@
+//                             وسيلة لمشاركة المعلومات
+// 		                            عنوان وقيمة
+//   Curly brackets   {} 	    key   and value 	{integer  , string , boolean , object}
+//   square brackets  []	    index and value     {integer  , string , boolean , object}
+// 		                              البداية
+
+{
+
+    "Name"   :   [
+
+        "a"
+    
+        ,
+    
+        24
+    
+        
+      ]
+    
+    ,
+
+    "age"    :24
+
+
+}
+
+
+// [
+
+//     "abdullah"
+
+//     ,
+
+//     24
+
+    
+// ]
+

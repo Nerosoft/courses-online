@@ -1,0 +1,71 @@
+//http://localhost:5000/setData?id=11&name=abdullah&age=29
+
+
+const functions = require('firebase-functions');
+const espress= require("express");
+//npm i handlebars consolidate --save
+ const engines=require('consolidate');
+
+
+var app=espress();
+
+ app.set('views','./views');
+ app.engine('hbs',engines.handlebars);
+ app.set('view engine', 'hbs');
+
+
+ var admin = require("firebase-admin");
+
+ // Fetch the service account key JSON file contents
+ var serviceAccount = require("./serviceAccountKey.json");
+ 
+ // Initialize the app with a service account, granting admin privileges
+ admin.initializeApp({
+   credential: admin.credential.cert(serviceAccount),
+   databaseURL: "https://osama-port.firebaseio.com"
+ });
+
+var db = admin.database();
+
+ function getDataJson(callback){
+    db.ref('/').once('value').then(function(snapshot) {
+    callback(snapshot.val())
+  });
+ }
+
+
+ app.get('/hello',(request, response) => {
+   getDataJson(function(data){
+    response.render("hello",{
+        myjson:JSON.stringify(data)
+    });
+   });
+     
+  });
+
+
+  function setData(userid,name,age,callback){
+    db.ref('/users/'+userid).set({
+      username: name,
+      age: age
+    },callback);
+  }
+
+  app.get('/setData',(request, response) => {
+      var http=request.query;
+      setData(http.id,http.name,http.age,function(error){
+          if (error) {
+            // The write failed...
+            response.send("The write failed...")
+          } else {
+            response.send("Data saved successfully!");
+            // Data saved successfully!
+          }
+      });
+
+   });
+
+// // Create and Deploy Your First Cloud Functions
+// // https://firebase.google.com/docs/functions/write-firebase-functions
+//
+exports.abdo = functions.https.onRequest(app);

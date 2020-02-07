@@ -1,0 +1,44 @@
+const functions = require('firebase-functions');
+const espress= require("express");
+//npm i handlebars consolidate --save
+ const engines=require('consolidate');
+
+
+var app=espress();
+
+ app.set('views','./views');
+ app.engine('hbs',engines.handlebars);
+ app.set('view engine', 'hbs');
+
+
+ var admin = require("firebase-admin");
+
+ // Fetch the service account key JSON file contents
+ var serviceAccount = require("./serviceAccountKey.json");
+ 
+ // Initialize the app with a service account, granting admin privileges
+ admin.initializeApp({
+   credential: admin.credential.cert(serviceAccount),
+   databaseURL: "https://osama-port.firebaseio.com"
+ });
+ var db=admin.database();
+
+ function getDataJson(callback){
+  db.ref('/').once('value').then(function(snapshot) {
+    callback(snapshot.val())
+  });
+ }
+
+ app.get('/hello',(request, response) => {
+  getDataJson(function(data){
+      response.render("hello",{
+        myJson:JSON.stringify(data)
+      });
+    });
+     
+    });
+
+// // Create and Deploy Your First Cloud Functions
+// // https://firebase.google.com/docs/functions/write-firebase-functions
+//
+exports.abdo = functions.https.onRequest(app);

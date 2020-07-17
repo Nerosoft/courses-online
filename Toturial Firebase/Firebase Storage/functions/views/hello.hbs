@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Setting Page</title>
+  <link rel="icon" type="image/x-icon" href="./style/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/fontello/css/fontello.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div class="xo hello" dir="ltr">
+    <div class="container">
+      <div class="d-flex justify-content-center h-100">
+        <div class="card">
+          <div class="card-header">
+            <h3>Upload Single Image</h3>
+          </div>
+          <div class="card-body">
+            {{!-- action="/upload" method="POST" --}}
+            <form>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Images</span>
+                </div>
+
+                <div class="custom-file">
+                  <input type="file" multiple class="custom-file-input" onchange="Firebase.onSelectIMage(this.files);"
+                    id="input">
+                  <label class="custom-file-label" for="input">Choose file</label>
+                </div>
+
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Title</span>
+                </div>
+                <input type="text" class="form-control" id="title" name='title' aria-label="Default" value=""
+                  aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Alt</span>
+                </div>
+                <input type="text" class="form-control" id="alt" name='alt' aria-label="Default" value=""
+                  aria-describedby="inputGroup-sizing-default">
+              </div>
+              <button type="button" onclick="Firebase.displayValueInput();"
+                class="btn float-right login_btn">Save</button>
+              {{!-- <button type="submit" class="btn float-right login_btn">Save</button> --}}
+              {{!-- <a href="/" target="_blank" class="btn float-right login_btn sin_btn">Galler</a> --}}
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./hello.js"></script>
+</body>
+
+</html>

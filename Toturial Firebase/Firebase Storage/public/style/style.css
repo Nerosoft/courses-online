@@ -1,0 +1,78 @@
+body{
+    height: 100vh;
+  overflow: hidden;
+}
+#carouselExampleIndicators{
+    height: 100%!important;
+}
+
+.title{
+    color: red;
+}
+.alt{
+    color: black;
+}
+
+.d-none {
+     display: block!important; 
+}
+
+.xo{
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    
+    }
+    
+    .container{
+    height: 100%;
+    align-content: center;
+    }
+    
+    .card{
+    height: 400x;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    .hello .card a{
+       margin-right: 10px;
+    }
+
+     .hello .input-group-prepend span {
+        width: 100%;
+    }
+
+
+    .card-header h3{
+    color: white;
+    }
+    
+
+    
+    .input-group-prepend span{
+    width: 50px;
+    background-color: #eaba64;
+    color: black;
+    border:0 !important;
+    }
+    
+
+ 
+
+    
+    .login_btn{
+    color: black;
+    background-color: #eaba64;
+    width: 100px;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
+    

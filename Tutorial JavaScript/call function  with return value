@@ -1,0 +1,39 @@
+class employe {
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+        this.salary = null
+    }
+
+    diplayInfo() {
+        console.log(this.name, this.age, this.salary)
+    }
+    setSalary(salary) {
+        this.salary = salary
+    }
+
+    tax(tax) {
+
+        let newSalary = this.salary - tax
+
+        return newSalary
+    }
+
+}
+
+var emp = new employe("abdullah", 25)
+emp.setSalary(100)
+
+emp.diplayInfo()
+
+let newSalary=  emp.tax(10)
+
+console.log("the new salary "  + newSalary)
+
+var emp2 = new employe("ahmed", 22)
+emp2.setSalary(200)
+emp2.diplayInfo()
+
+var emp3 = new employe("osama", 26)
+emp3.setSalary(300)
+emp3.diplayInfo()

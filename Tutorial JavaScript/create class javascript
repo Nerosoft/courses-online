@@ -1,0 +1,23 @@
+class employe{
+
+
+    constructor(){
+
+        this.name  =   "abdullah"
+
+        this.age   =     25
+
+    }
+
+
+
+    diplayInfo   (         )     {
+
+            console.log( this.name  ,this.age  )
+
+    }
+
+
+
+
+}

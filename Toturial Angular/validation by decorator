@@ -1,0 +1,81 @@
+import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+
+let courses = []
+
+
+function validation(config) {
+
+  return (obj, prop, descriptor)=>{
+
+    const originalFun = descriptor.value
+
+       console.log(config)
+
+    descriptor.value = (course) => {
+
+      if (courses.includes(course))
+        console.log("no change")
+      else
+        originalFun(course)
+    }
+
+  }
+}
+
+
+
+
+@Component({
+  selector: 'app-root2',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements AfterViewInit {
+  title = "typescript"
+  Xvalue = null
+
+  @ViewChild('input', {
+    read: ElementRef,
+    static: false
+  }) y: ElementRef
+
+  constructor() {
+    this.Xvalue = 'hello'
+    //this.addCourse()
+  }
+
+  ngAfterViewInit(): void {
+    // console.log("sadsadsadas",this.y.nativeElement.value)
+    setInterval(() => {
+      if (this.y.nativeElement.value === "abc")
+        this.y.nativeElement.value = ""
+    }, 100)
+  }
+
+
+  addItemValue(value) {
+    console.log(value)
+  }
+
+  age = 25
+
+  @validation({
+    name : "abdullah" ,
+    age : 25
+  })
+  addCourse(course) {
+
+    courses.push(course)
+    console.log(courses)
+  }
+
+
+}
+
+
+
+
+
+
+
+

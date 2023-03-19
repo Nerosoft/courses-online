@@ -1,0 +1,8 @@
+#include<string>
+
+class car {
+public:
+    string name = "my car";
+    string model = "ix";
+};
+

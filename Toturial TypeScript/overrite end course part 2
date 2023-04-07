@@ -1,0 +1,165 @@
+import { Component } from '@angular/core';
+import { employ } from './employ';
+import { error } from './error';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements AtmInfo {
+
+  constructor() {
+    this.UserName = "abdullah"
+    this.Pass = "123"
+    this.CreaditID = 1234567
+    this.Machine = "Ultra Atm";
+
+    this.magic = "is Ultra Atm"
+    let sense = this.title
+     
+    switch (sense) {
+      case this.magic:
+        new error(this);
+        break;
+      default:
+        this.empInt()
+    }
+
+
+  }
+  UserName: string;
+  Pass: string;
+  CreaditID: number;
+  Machine: string;
+
+  empInt() {
+    new employ(this, this.magic);
+  }
+
+  magic: any;
+  title = 'Ultra Atm';
+
+}
+
+
+export interface AtmInfo {
+  UserName: string;
+  Pass: string;
+  CreaditID: number;
+  Machine: string;
+}
+
+
+
+
+
+--------------------------------------------------------
+
+
+import { AtmInfo } from "./app.component";
+
+abstract class creadit {
+  private _creaditID: number;
+  private _pass: string;
+  public get getCreaditID(): number {
+    return this._creaditID;
+  }
+  public get getPassOfCreadit(): string {
+    return this._pass;
+  }
+  constructor(atm: AtmInfo) {
+    this._creaditID = atm.CreaditID;
+    this._pass = atm.Pass;
+  }
+
+
+
+  public loginCredit(signIn: AtmInfo) {
+    if (this.getCreaditID == 1234567) {
+      console.log("user name     is " + signIn.UserName);
+      console.log("your password is " + this.getPassOfCreadit);
+      console.log("your creadit  is " + this.getCreaditID);
+      console.log("atm successfully login ( " + signIn.Machine + " )")
+    }
+
+  }
+
+}
+
+
+
+export class employ extends creadit {
+  MagicAtm: string
+  constructor(atm: AtmInfo, magicAtm: string) {
+    super(atm);
+    this.MagicAtm = magicAtm
+    this.loginCredit(atm)
+    console.log('your magic atm', this.MagicAtm)
+  }
+}
+
+
+
+
+
+
+----------------------------------
+
+
+
+
+
+
+import { AtmInfo } from "./app.component";
+
+
+abstract class creadit {
+  private _creaditID: number;
+  private _pass: string;
+  public get getCreaditID(): number {
+    return this._creaditID;
+  }
+  public get getPassOfCreadit(): string {
+    return this._pass;
+  }
+  constructor(atm: AtmInfo) {
+    this._creaditID = atm.CreaditID;
+    this._pass = atm.Pass;
+  }
+
+
+
+  public loginCredit(signIn: AtmInfo) {
+    if (this.getCreaditID == 1234567) {
+      console.log("user name     is " + signIn.UserName);
+      console.log("your password is " + this.getPassOfCreadit);
+      console.log("your creadit  is " + this.getCreaditID);
+      console.log("atm successfully login ( " + signIn.Machine + " )")
+    }
+
+  }
+
+}
+
+
+
+export class error extends creadit {
+  constructor(atm: AtmInfo) {
+    super(atm);
+    this.loginCredit(atm);
+  }
+
+
+
+
+  public override loginCredit(signIn: AtmInfo) {
+    console.log('The', signIn.Machine, 'error login')
+  }
+   
+}
+
+
+
+
+

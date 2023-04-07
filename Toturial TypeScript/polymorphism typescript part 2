@@ -1,0 +1,78 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements Display {
+
+  constructor() {
+    /*  "Ica", 7
+        "Sully", 3
+        "Mesho", 8   */
+
+    console.log("Display Ica")
+    this.name = "Ica"
+    this.age  =7+1 
+    let Ica = new A("Ica", 7)
+    this.displayInfo(Ica)
+    //update Ica
+    Ica.displayInfo(this)
+
+    console.log("Display Sully")
+    this.name = "Sully"
+    this.age = 3 + 1
+    let Sully = new A("Ica", 3)
+    this.displayInfo(Sully)
+    //update Sully
+    Sully.displayInfo(this)
+
+    console.log("Display Mesho")
+    this.name = "Mesho"
+    this.age = 7 + 1
+    let Mesho = new A("Mesho", 8)
+    this.displayInfo(Mesho)
+    //update Mesho
+    Mesho.displayInfo(this)
+
+  }
+    name: string;
+    age: number;
+  displayInfo(Display: Display) {
+        Display.displayInfo(this)
+   }
+
+
+}
+
+
+
+class Y {
+  constructor(display: Display) {
+    display.displayInfo(display)
+    
+  }
+}
+
+class A implements Display {
+  name: string
+  age: number
+  constructor(name?:any,age?:any) {
+    this.name = name;
+    this.age=age
+    new Y(this)
+  }
+
+  displayInfo(display: Display) {
+    console.log(display.name, display.age)
+  }
+}
+
+
+
+interface Display {
+  name: string
+  age: number
+  displayInfo(Display: Display): any
+}

@@ -30,7 +30,7 @@ export class AppComponent implements Display {
 
     console.log("Display Mesho")
     this.name = "Mesho"
-    this.age = 7 + 1
+    this.age = 8 + 1
     let Mesho = new A("Mesho", 8)
     this.displayInfo(Mesho)
     //update Mesho

@@ -1,0 +1,28 @@
+#include "iostream"
+using namespace std;
+
+
+class Car {
+
+public:
+	Car(){
+
+		cout << "Iam heeeeeer" << endl;
+
+	}
+
+
+};
+
+
+int main() {
+	cout << "hello world" << endl;
+
+	Car car;
+
+	system("pause");
+	return 0;
+}
+
+
+

@@ -1,0 +1,38 @@
+#include "iostream"
+using namespace std;
+
+class Car {
+public:
+	int my_price{ 0 };
+	Car(int price) {
+		this->my_price = price;
+		cout << this->my_price << endl;
+	}
+	Car(){
+	}
+};
+
+
+class Employe : public Car{
+public:
+	Employe() : Car(3000000){
+
+	}
+	void DisplayMyPrice() {
+		cout << this->my_price << endl;
+	}
+};
+
+int main() {
+	cout << "hello world" << endl;
+
+	Employe emp;
+	emp.DisplayMyPrice();
+	Employe emp2;
+	emp2.DisplayMyPrice();
+	Employe emp3;
+	emp3.DisplayMyPrice();
+
+	system("pause");
+	return 0;
+}

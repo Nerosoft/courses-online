@@ -1,0 +1,60 @@
+#include "iostream"
+using namespace std;
+class Car {
+public:
+	int var1 = 101;
+	int My_price{ 0 };
+	Car(int price) {
+		this->My_price = price;
+	}
+	int showYear() {
+		return this->year;
+}
+private:
+	int year = 2023;
+protected:
+	int var3 = 2016;
+	void showPrice() {
+		cout << "my price is *" << this->My_price << endl;
+	}
+};
+class Employe :public Car {
+public:
+	int var2 = 102;
+	Employe(int price) : Car(price) {
+	}
+	Employe() : Car(3000000) {
+		this->message();
+		cout << "my price is " << this->My_price << endl;
+	}
+	void DisplayMyPrice() {
+		this->showPrice();
+	}
+	int displayMyAge() {
+		return this->age;
+	}
+	void display() {
+		cout << this->var3 << endl;
+	}
+protected:
+	int var = 2017;
+	void message() {
+		cout << "hello world" << endl;
+	}
+private:
+	int age = 27;
+};
+int main() {
+	Employe emp;
+	emp.DisplayMyPrice();
+	Car car(3000000);
+	cout<<car.showYear()<<endl;
+	cout << "my age is " << emp.displayMyAge() << endl;
+	cout << "my price is *" << car.My_price << endl;//car
+	cout << "my price is *" << emp.My_price << endl;//emp
+	cout << emp.var1 << " " << emp.var2 << endl;
+	cout << car.var1 << endl;
+	emp.display();
+	system("pause");
+	return 0;
+}

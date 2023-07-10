@@ -6,6 +6,8 @@ public:
 	int My_price{ 0 };
 	Car(int price) {
 		this->My_price = price;
+		 // this->showYear();
+		//  this->showPrice();
 	}
 	int showYear() {
 		return this->year;
@@ -26,6 +28,9 @@ public:
 	Employe() : Car(3000000) {
 		this->message();
 		cout << "my price is " << this->My_price << endl;
+		 // this->DisplayMyPrice();
+		//  this->display();
+	       //   this->displayMyAge();
 	}
 	void DisplayMyPrice() {
 		this->showPrice();

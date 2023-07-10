@@ -6,8 +6,12 @@ public:
 	int My_price{ 0 };
 	Car(int price) {
 		this->My_price = price;
-		 // this->showYear();
-		//  this->showPrice();
+		// cout << "var " << this->var1		<< endl;
+		// cout << "var " << this->var3		<< endl;
+		// cout << "var " << this->year		<< endl;
+		// cout << "var " << this->My_price 	<< endl;
+		// this->showYear();
+		// this->showPrice();
 	}
 	int showYear() {
 		return this->year;
@@ -28,9 +32,17 @@ public:
 	Employe() : Car(3000000) {
 		this->message();
 		cout << "my price is " << this->My_price << endl;
-		 // this->DisplayMyPrice();
-		//  this->display();
-	       //   this->displayMyAge();
+
+		// cout << "var " << this->My_price << endl;
+		// cout << "var " << this->age		<< endl;
+		// cout << "var " << this->var		<< endl;
+		// cout << "var " << this->var1		<< endl;
+		// cout << "var " << this->var2		<< endl;
+		// cout << "var " << this->var3		<< endl;
+		// this->DisplayMyPrice();
+		// this->display();
+	        // this->displayMyAge();
+	        // this->showYear();
 	}
 	void DisplayMyPrice() {
 		this->showPrice();

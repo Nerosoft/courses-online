@@ -21,6 +21,9 @@ public:
 
 	}
 
+	//Employe() :Car(3000000) {
+	//}
+
 };
 
 int main() {
